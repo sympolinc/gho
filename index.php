@@ -69,11 +69,11 @@ if($page){
             }
             ?>
         </ul>
+        <script type="text/javascript" src="../src/gho.js?v=<?php echo rand();?>"></script>
         <?php if($page){?>
         <div id="qunit"></div>
         <div id="qunit-fixture"></div>
         <script src="//code.jquery.com/qunit/qunit-1.14.0.js"></script>
-        <script type="text/javascript" src="../src/gho.js?v=<?php echo rand();?>"></script>
         <script type="text/javascript" src="tests/<?php echo $page;?>.js"></script>
         <?php }?>
         <form action="" method="get" id="jump">
